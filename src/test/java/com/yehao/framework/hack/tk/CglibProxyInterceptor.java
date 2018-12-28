@@ -25,7 +25,6 @@ public class CglibProxyInterceptor implements MethodInterceptor {
         return enhancer.create();
     }
 
-    @Override
     public Object intercept(final Object o, final Method method, final Object[] objects, final MethodProxy methodProxy) throws Throwable {
         Object result;
         //do before

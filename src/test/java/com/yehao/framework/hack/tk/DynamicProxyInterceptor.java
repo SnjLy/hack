@@ -21,7 +21,6 @@ public class DynamicProxyInterceptor implements InvocationHandler {
         this.object = mapperInterceptor;
     }
 
-    @Override
     public Object invoke(final Object proxy, final Method method, final Object[] args) throws Throwable {
         Object result = null;
         //调用之前
